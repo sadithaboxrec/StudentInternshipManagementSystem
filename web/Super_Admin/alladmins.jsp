@@ -11,10 +11,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 
-<%@page import="com.DAO.userDAOImpl"%>
+<%@page import="com.DAO.AdminDAOImpl"%>
 <%@page import="com.DB.DBConnect"%>
 <%@page import="java.util.List"%>
-<%@page import="com.Entity.User"%>
+<%@page import="com.Entity.Admin"%>
 
 <!DOCTYPE html>
 <html>
@@ -65,14 +65,14 @@
 			 
 			<tr>
                             
-			   <td><%=admin.getAdminId %></td>
+			    <td><%=admin.getAdminId() %></td>
                             <td> <%=admin.getName() %> </td>
                             <td> <%=admin.getEmail() %></td>
                             <td> <%=admin.getTelephone() %></td>
                            <td> <%=admin.getUsername() %></td>
-                            <td> <img src="../images/users/<%=us.getPhotoName() %>"  style="width:50px; height:50px;"> </td>
+                            <td> <img src="../images/users/<%=admin.getPhotoName() %>"  style="width:50px; height:50px;"> </td>
                             <td>
-                               <a href="editadmins.jsp?id=<%=us.getAdminId() %>">Edit</a>
+                               <a href="editadmins.jsp?id=<%=admin.getAdminId() %>">Edit</a>
                             </td>
 		    </tr>
 			  

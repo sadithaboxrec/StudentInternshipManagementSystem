@@ -60,10 +60,10 @@ public class RegisterServlet extends HttpServlet {
 				  part.write(path + File.separator+ fileName);
 				
 				session.setAttribute("SuccessMsg", "User Added Successfully");
-				response.sendRedirect("Super_Admin/addUsers.jsp");
+				response.sendRedirect("Super_Admin/alladmins.jsp");
 			}else {
 				session.setAttribute("failedMsg", "Something wrong on Server");
-				response.sendRedirect("Super_Admin/addUsers.jsp");
+				response.sendRedirect("Super_Admin/alladmins.jsp");
 			}
 			
                 } catch (Exception e) {
