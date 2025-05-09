@@ -40,11 +40,11 @@ public class StudentRegister extends HttpServlet {
                 if(f) {
 				 	
                   session.setAttribute("SuccessMsg", "Student Added Successfully");
-                 // response.sendRedirect("Super_Admin/alladmins.jsp");
+                  response.sendRedirect("login.jsp");
                   
                 }else {
                     session.setAttribute("failedMsg", "Something wrong on Server");
-                 //   response.sendRedirect("Super_Admin/alladmins.jsp");
+                    response.sendRedirect("index.jsp");
 	        }
             
         } catch (Exception e) {
