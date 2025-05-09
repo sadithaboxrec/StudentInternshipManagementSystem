@@ -49,13 +49,13 @@ public class UserLoginServlet extends HttpServlet {
 
             switch (role) {
                 case "admin":
-                    response.sendRedirect("Super_Admin/dashboard.jsp");
+                    response.sendRedirect("dashboardAdmin.jsp");
                     break;
                 case "company":
-                    response.sendRedirect("Company/dashboard.jsp");
+                    response.sendRedirect("dashboardCompany.jsp");
                     break;
                 case "student":
-                    response.sendRedirect("Student/dashboard.jsp");
+                    response.sendRedirect("dashboardStudent.jsp");
                     break;
                 default:
                     session.setAttribute("failedMsg", "Unknown role");

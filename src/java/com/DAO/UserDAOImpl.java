@@ -39,7 +39,7 @@ public class UserDAOImpl implements UserDAO {
                 admin.setTelephone(rs.getString("telephone"));
                 admin.setUsername(rs.getString("username"));
                 admin.setPassword(rs.getString("password"));
-                admin.setPhotoName(rs.getString("photo"));
+                admin.setPhotoName(rs.getString("photoName"));
                 admin.setRole(rs.getString("role"));
                 return admin;
             }
