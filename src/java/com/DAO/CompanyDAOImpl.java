@@ -12,10 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.sql.ResultSet;
 
-/**
- *
- * @author sadit
- */
+
 public class CompanyDAOImpl implements CompanyDAO {
         
              private Connection conn;
