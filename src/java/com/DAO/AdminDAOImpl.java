@@ -44,6 +44,7 @@ public class AdminDAOImpl  implements AdminDAO{
             ps.setString(4, admin.getUsername()); 
             ps.setString(5, admin.getPassword());
             ps.setString(6, admin.getPhotoName());
+            ps.setString(7, admin.getRole());
 
             
             int i= ps.executeUpdate();

@@ -18,7 +18,7 @@ import jakarta.servlet.http.HttpSession;
 import jakarta.servlet.http.Part;
 import java.io.File;
 
-import java.sql.Connection;
+
 
 
 
@@ -42,7 +42,7 @@ public class RegisterServlet extends HttpServlet {
                     String fileName=part.getSubmittedFileName();
 			
 			
-			Connection conn = DBConnect.getConn();
+		//	Connection conn = DBConnect.getConn();
 			
 			Admin admin = new Admin(name, email, telephone,username, password, fileName,"admin");
 
