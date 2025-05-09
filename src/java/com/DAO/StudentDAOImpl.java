@@ -35,7 +35,7 @@ public class StudentDAOImpl implements StudentDAO{
         
         try {
             
-            String sql="INSERT INTO student  (name, email, telephone,password,role) VALUES ( ?,  ?, ?, ?) ";
+            String sql="INSERT INTO student  (name, email, telephone,password,role) VALUES ( ?,  ?, ?, ?,?) ";
             
             PreparedStatement ps=conn.prepareStatement(sql);
             ps.setString(1, student.getName());
