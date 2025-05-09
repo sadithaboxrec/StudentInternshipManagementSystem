@@ -17,6 +17,7 @@ public class Admin  {
 	private String username;
 	private String password;
 	private String photoName;
+        private String role;
         
         
         public Admin() {
@@ -25,7 +26,7 @@ public class Admin  {
 	
 	
 	public Admin(String name, String email, String telephone, String username,
-			String password, String photoName) {
+			String password, String photoName ,String role) {
 		super();
 		this.name = name;
 		this.email = email;
@@ -33,6 +34,7 @@ public class Admin  {
 		this.username = username;
 		this.password = password;
 		this.photoName = photoName;
+                this.role = role;
 	}
         
         
@@ -100,6 +102,17 @@ public class Admin  {
         return photoName;
     }
 
+
+    public String getRole() {
+        return role;
+    }
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    
+    
+    
         
 	
     

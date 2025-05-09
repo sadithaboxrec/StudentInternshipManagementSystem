@@ -35,7 +35,7 @@ public class AdminDAOImpl  implements AdminDAO{
         
         try {
             
-            String sql="INSERT INTO admin  (name, email, telephone, username, password, photoName) VALUES ( ?,  ?, ?, ?, ?, ?) ";
+            String sql="INSERT INTO admin  (name, email, telephone, username, password, photoName,role) VALUES ( ?,  ?, ?, ?, ?, ?,?) ";
             
             PreparedStatement ps=conn.prepareStatement(sql);
             ps.setString(1, admin.getName());

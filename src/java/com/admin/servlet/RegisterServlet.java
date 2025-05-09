@@ -44,7 +44,7 @@ public class RegisterServlet extends HttpServlet {
 			
 			Connection conn = DBConnect.getConn();
 			
-			Admin admin = new Admin(name, email, telephone,username, password, fileName);
+			Admin admin = new Admin(name, email, telephone,username, password, fileName,"admin");
 
 			
 			AdminDAOImpl dao=new AdminDAOImpl(DBConnect.getConn());
